@@ -43,18 +43,18 @@ try {
     // Настройки SMTP
     $mail->isSMTP();                       
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug  = 1;
+    $mail->SMTPDebug  = 2;
 
     // Настройки вашей почты
-    $mail->Host = 'ssl://smtp.beget.com';
+/*     $mail->Host = 'ssl://smtp.beget.com';
     $mail->Port = 465;
-/*     $mail->Username = 'admin@vsegda220v.ru';
+    $mail->Username = 'admin@vsegda220v.ru';
     $mail->Password = ''; */
 
-/*     $mail->Host       = 'ssl://smtp.mail.com'; // SMTP сервера MAIL
+    $mail->Host       = 'ssl://smtp.mail.com'; // SMTP сервера MAIL
     $mail->Port       = 465;
     $mail->Username   = 'adm.vsegda220v@mail.ru'; // Логин на почте
-    $mail->Password   = 'Vsegda5296Vsegda'; // Пароль на почте */
+    $mail->Password   = 'Vsegda5296Vsegda'; // Пароль на почте
 
     // От кого
     $mail->setFrom('adm.vsegda220v@mail.ru', 'vsegda220v.ru');        
