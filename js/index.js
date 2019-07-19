@@ -135,27 +135,23 @@ for(y = 0; y < 4; y++) {
 }
 
 
+answer = 'Ваше сообщение успешно отправлено!';
 
 $('#form').trigger('reset');
 $(function() {
   'use strict';
   $('#form').on('submit', function(e) {
     e.preventDefault();
+    console.log('#form');
     $.ajax({
       url: 'send.php',
       type: 'POST',
       contentType: false,
       processData: false,
       data: new FormData(this),
-      success: function(msg) {
-        console.log(msg);
-        if (msg == 'ok') {
-          alert('Сообщение отправлено');
-          $('#form').trigger('reset'); // очистка формы
-        } else {
-          alert('Ошибка');
-        }
-      }
     });
+    $('.form').find('input[type=text], textarea').val('');
+    $('.form').find('input[type=email], textarea').val('');
+    document.getElementById('answer').innerHTML = answer;  
   });
 });
