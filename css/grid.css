@@ -1,0 +1,328 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html { height: 101%; }
+
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+  ol, ul { list-style: none; }
+   
+  blockquote, q { quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+  strong { font-weight: bold; } 
+   
+  table { border-collapse: collapse; border-spacing: 0; }
+  img { border: 0; max-width: 100%; }
+   
+  p { font-size: 1.2em; line-height: 1.0em; }
+
+   /* Смартфоны (книжная и альбомная ориентация) ----------- */  
+ @media only screen   
+ and (min-device-width : 320px) and (max-device-width : 480px) {  
+   /* Стили */  
+ }  
+   
+ /* Смартфоны (альбомная ориентация) ----------- */  
+ @media only screen and (min-width : 321px) {  
+   /* Стили */  
+ }  
+   
+ /* Смартфоны (книжная ориентация) ----------- */  
+ @media only screen and (max-width : 320px) {  
+   /* Стили */  
+ }  
+   
+ /* iPad’ы (книжная и альбомная ориентация) ----------- */  
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {  
+   /* Стили */  
+ }  
+   
+ /* iPad’ы  (альбомная ориентация) ----------- */  
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {  
+   /* Стили */  
+ }  
+   
+ /* iPad’ы (книжная ориентация) ----------- */  
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {  
+   /* Стили */  
+ }  
+   
+ /* Десктопы и лэптопы ----------- */  
+ @media only screen and (min-width : 1224px) {  
+   /* Стили */  
+ }  
+   
+ /* Большие экраны ----------- */  
+ @media only screen and (min-width : 1824px) {  
+   /* Стили */  
+ }  
+   
+ /* iPhone 4 ----------- */  
+ @media only screen and (-webkit-min-device-pixel-ratio:1.5), only screen and (min-device-pixel-ratio:1.5) {  
+   /* Стили */  
+ }
+
+/* serif  на базе шрифта Times New Roman */
+font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+
+/* Современный serif  на базе шрифта Georgia */
+font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
+/*Более традиционный serif  на базе шрифта Garamond */
+font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+
+/*sans  serif  на базе шрифта Helvetica/Arial */
+font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/*sans serif  на базе шрифта Verdana */
+font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+
+/*sans serif  на базе шрифта Trebuchet */
+font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+
+/*Более «тяжеловесный» sans serif  */
+font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+
+/*Равноширинный шрифт */
+font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+
+/* html { 
+    background: url('images/bg.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
+} */
+
+/* .container { 
+    min-height: 6.5em; 
+    display: table-cell; 
+    vertical-align: middle; 
+} */
+
+.float-left { /* Or whatever name you like */
+    float: left;
+}
+ 
+.float-right { /* Or whatever name you like */
+    float: right;
+}
+
+.content {
+    font: 1em/1.4 Segoe, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+ 
+.title {
+    font: 1.7em/1.2 Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+ 
+.code {
+    font: 0.8em/1.6 Monaco, Mono-Space, monospace;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+ 
+.clearfix:after {
+    clear: both;
+}
+ 
+/* IE6/7 support */
+.clearfix {
+    *zoom: 1;
+}
+
+.row-center {
+    display: flex;
+    justify-content: center;
+}
+
+.row-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column-center-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+[class*=col-] {
+    float: left;
+    padding: 0;
+}
+
+.col-1 {
+    width: 8.333%
+}
+
+.col-2 {
+    width: 16.667%
+}
+
+.col-3 {
+    width: 25%
+}
+
+.col-4 {
+    width: 33.333%
+}
+
+.col-5 {
+    width: 41.667%
+}
+
+.col-6 {
+    width: 50%
+}
+
+.col-7 {
+    width: 58.333%
+}
+
+.col-8 {
+    width: 66.667%
+}
+
+.col-9 {
+    width: 75%
+}
+
+.col-10 {
+    width: 83.333%
+}
+
+.col-11 {
+    width: 91.667%
+}
+
+.col-12 {
+    width: 100%
+}
+
+.offset-1 {
+    margin-left: 8.333%
+}
+
+.offset-2 {
+    margin-left: 16.667%
+}
+
+.offset-3 {
+    margin-left: 25%
+}
+
+.offset-4 {
+    margin-left: 33.333%
+}
+
+.offset-5 {
+    margin-left: 41.667%
+}
+
+.offset-6 {
+    margin-left: 50%
+}
+
+.offset-7 {
+    margin-left: 58.333%
+}
+
+.offset-8 {
+    margin-left: 66.667%
+}
+
+.offset-9 {
+    margin-left: 75%
+}
+
+.offset-10 {
+    margin-left: 83.333%
+}
+
+.offset-11 {
+    margin-left: 91.667%
+}
+
+.offset-12 {
+    margin-left: 100%
+}
+
+.inset-1 {
+    margin-right: 8.333%
+}
+
+.inset-2 {
+    margin-right: 16.667%
+}
+
+.inset-3 {
+    margin-right: 25%
+}
+
+.inset-4 {
+    margin-right: 33.333%
+}
+
+.inset-5 {
+    margin-right: 41.667%
+}
+
+.inset-6 {
+    margin-right: 50%
+}
+
+.inset-7 {
+    margin-right: 58.333%
+}
+
+.inset-8 {
+    margin-right: 66.667%
+}
+
+.inset-9 {
+    margin-right: 75%
+}
+
+.inset-10 {
+    margin-right: 83.333%
+}
+
+.inset-11 {
+    margin-right: 91.667%
+}
+
+.inset-12 {
+    margin-right: 100%
+}

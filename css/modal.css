@@ -1,0 +1,219 @@
+.navbar{padding-bottom:0;margin-bottom:0}
+.modal{z-index:100000}
+.modal-content{box-shadow:none;border:none}
+.modal .modal-dialog{    max-width: 800px;
+    border: 6px solid #DCDCDC;
+    border-radius: 12px;
+    background-color: #FFF;}
+#order .modal-body{padding:0}
+#order .modal-dialog .modal-content{border:none}
+#order .p_item_img_wrap{margin-top:-120px}
+.modal_product_descr{padding-right:100px;padding-left:100px;margin-top:22px;margin-bottom:26px}
+p.p_chars_ttitle{font-size:16px;line-height:19px;font-family:"MuseoSansBold";text-align:center;margin-bottom:17px}
+#order table td{padding-left:77px;padding-top:10px;padding-bottom:10px}
+.chars_table{margin-bottom:25px;width:100%}
+.chars_table td{font-size:16px;color:#525252;width:50%}
+.chars_table td:first-child span{display:block;font-size:12px;line-height:12px}
+.chars_table td:first-child span.checkbox-custom,.chars_table td:first-child span.label{display:inline-block}
+.chars_table tr{border-radius:3px}.chars_table tr:nth-child(odd) td{background-color:#F6F6F6}.p_head_table{width:100%;margin-bottom:20px}
+.p_head_table td{font-size:22px;letter-spacing:.28px;line-height:29px;font-family:"MuseoSansBold";width:50%}
+.p_head_table td span{font-size:18px;display:block;font-family:"MuseoSansRegular"}
+.p_head_table td span.old_price{color:#999;text-decoration:line-through;font-size:18px;display:block}
+.p_head_table.p_bot_table td span{font-size:20px;display:inline-block;color:#000;font-family:"MuseoSansBold"}
+.chars_table td label{position:relative;cursor:pointer}
+.chars_table td label .label{font-size:16px;color:#525252;padding:0;white-space:normal;font-weight:400;text-align:left;line-height:20px}
+.checkbox{display:none}
+.checkbox-custom{position:relative;width:24px;height:24px;border:1px solid #979797;border-radius:4px;background-color:#FFF}
+.chars_table td label .checkbox-custom{position:absolute;left:-35px}
+.checkbox-custom,.label{display:inline-block;vertical-align:middle}
+.mb0{margin-bottom:0!important}
+.checkbox:checked + .checkbox-custom::before{content:"";display:block;position:absolute;height:8.57px;width:19.79px;top:6px;right:2px;bottom:2px;left:5px;background-image:url(../img/check.png);background-repeat:no-repeat;border-radius:2px}
+p.modal_m_jobs{padding-left:65px;font-size:12px;line-height:15px;color:#525252}
+.p_bot_table td{font-size:20px}
+.m_product_form_wrap{background-image:url(../img/Group30.png);margin-bottom:30px;position:relative;padding:35px 150px}
+.m_product_form_wrap:before{content:'';position:absolute;width:100%;top:-18px;left:0;height:30px;background-image:url(https://opt-1289685.ssl.1c-bitrix-cdn.ru/bitrix/templates/energomachines/img/Fill%201%20Copy%2011.svg);}
+.m_product_form_wrap form input[type="text"]{height:39px;width:238px;border:1px solid #C5C5C5;border-radius:6px;font-size:14px;letter-spacing:.08px;line-height:17px;padding-left:15px}
+.m_product_form_wrap form .btn{display:block;width:100%;height:39px;margin-top:20px;font-size:16px;letter-spacing:.09px;line-height:19px}
+.m_product_form_wrap form .btn span{position:relative}
+.m_product_form_wrap form .btn span:after{transition:all .2s ease;content:'';position:absolute;width:0;height:3px;background-color:#fff;left:0;bottom:-3px}
+.m_product_form_wrap form .btn:hover span:after{width:100%}
+.modal .close{position:absolute;right:20px;top:20px;height:28px;width:28px;background-image:url(../img/close.png);background-repeat:no-repeat}
+#succes .modal-body,#succes_1 .modal-body,#succes_2 .modal-body{padding-top:59px;padding-bottom:58px}
+
+        /* свойства модального окна по умолчанию */
+        .modal {
+            position: fixed; /* фиксированное положение */
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5); /* цвет фона */
+            z-index: 1050;
+            opacity: 0; /* по умолчанию модальное окно прозрачно */
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in; /* анимация перехода */
+            pointer-events: none; /* элемент невидим для событий мыши */
+            padding-top: 78px;
+        }
+
+        /* при отображении модального окно */
+        .modal:target {
+            opacity: 1;
+            pointer-events: auto;
+            overflow-y: auto;
+        }
+
+        /* ширина модального окна и его отступы от экрана */
+        .modal-dialog {
+            position: relative;
+            width: auto;
+            margin: 10px;
+        }
+
+        @media (min-width: 576px) {
+            .modal-dialog {
+                max-width: 500px;
+                margin: 30px auto;
+            }
+        }
+
+        /* свойства для блока, содержащего контент модального окна */
+        .modal-content {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            background-color: #fff;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, .2);
+            border-radius: .3rem;
+            outline: 0;
+        }
+
+        /* свойства для заголовка модального окна */
+        .modal-header {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #eceeef;
+        }
+
+        .modal-title {
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 1.5;
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        /* свойства для кнопки "Закрыть" */
+        .close {
+            float: right;
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1;
+            color: #000;
+            text-shadow: 0 1px 0 #fff;
+            opacity: .5;
+            text-decoration: none;
+        }
+
+        /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+        .close:focus, .close:hover {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            opacity: .75;
+        }
+
+        /* свойства для блока, содержащего основное содержимое окна */
+        .modal-body {
+            position: relative;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            padding: 15px;
+            overflow: auto;
+        }
+
+        p.callback_title {
+            font-size: 18px;
+            letter-spacing: .19px;
+            line-height: 24px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        p.callback_title span {
+            display: block;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: "MuseoSansBold";
+        }
+
+        .callback_form_wrap {
+            background-image: url(../img/Group30.png);
+            position: relative;
+            padding: 35px 120px;
+            margin-bottom: 30px;
+        }
+
+        .callback_form_wrap:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            top: -18px;
+            left: 0;
+            height: 30px;
+            background-image: url(https://opt-1289685.ssl.1c-bitrix-cdn.ru/bitrix/templates/energomachines/img/Fill%201%20Copy%2011.svg);
+        }
+
+        .callback_form_wrap input[type="text"] {
+            height: 39px;
+            width: 100%;
+            margin-right: 35px;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            font-size: 14px;
+            letter-spacing: .08px;
+            line-height: 17px;
+        }
+
+        form input[type="text"] {
+            border: 1px solid #C5C5C5;
+            border-radius: 6px;
+            background-color: #FFF;
+        }
+
+        .callback_form_wrap .btn {
+            display: block;
+            width: 100%;
+            height: 45px;
+            font-size: 16px;
+            letter-spacing: .09px;
+            line-height: 19px;
+        }
+
+@media screen and (max-width: 768px) {
+    .modal {padding-top: 178px;}
+}
