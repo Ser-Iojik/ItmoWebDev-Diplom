@@ -1,6 +1,8 @@
 <section>
     <div class="know_form_wrap">
-        <div class="ing_descr"><p> Здравствуйте, меня зовут Андрей. Я главный инженер компании «Энергетические машины». Газовые генераторы для загородных домов - это наша узкая специализация, которой мы занимаемся уже 10 лет.</p><p> Хочу поделиться с Вами основами, необходимыми при первых шагах выбора газового генератора. Эта информация поможет избежать грубых ошибок и сделает Ваш генератор верным помощником на долгие годы.</p><p> Пожалуйста, потратьте несколько минут, для ознакомления. </p></div>
+        <div class="ing_descr"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada in ligula vitae tincidunt. Fusce porta diam lorem, ac fringilla neque mattis ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus sem quam, consectetur at est id, sagittis lobortis est. Curabitur vel ligula non nulla ullamcorper bibendum quis at dolor. Etiam malesuada orci eget metus dignissim aliquet. Suspendisse potenti. Aliquam sit amet consequat justo. Cras rutrum sapien ligula, at tincidunt velit imperdiet id. Nullam molestie, risus et interdum ullamcorper, eros odio vulputate leo, vitae egestas elit nulla vitae urna. Donec ornare maximus sem a convallis. Mauris a convallis libero, quis vulputate justo. Vestibulum dui lorem, imperdiet at sapien a, auctor lacinia diam. Vivamus non felis vitae risus rhoncus consectetur. Aenean metus turpis, ultrices id nisi imperdiet, fringilla consequat ex.
+
+Vivamus sagittis nulla vitae erat vestibulum, tempor convallis risus tincidunt.</p></div>
     </div>
 </section>
 

@@ -205,8 +205,7 @@
                             <form enctype="multipart/form-data" method="post" id="form">
                                 <input placeholder="Имя" name="name" type="text">
                                 <input placeholder="Телефон" name="phone" type="text">
-                                <input type="hidden" name="formgoal" value="podrobnee">
-                                <button id="button" class="button btnOrange" type="submit">
+                                <button class="button btnOrange" type="submit">
                                     <span>Оставить заявку</span>
                                 </button>
                                 <p class="sogl_text">Нажимая на кнопку Отправить, я даю 

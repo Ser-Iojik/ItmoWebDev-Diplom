@@ -137,7 +137,6 @@ for(y = 0; y < 4; y++) {
 
 answer = 'Ваше сообщение успешно отправлено!';
 
-$('#form').trigger('reset');
 $(function() {
   'use strict';
   $('#form').on('submit', function(e) {
@@ -155,3 +154,4 @@ $(function() {
     document.getElementById('answer').innerHTML = answer;  
   });
 });
+
